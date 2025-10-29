@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Admin Dashboard</title>
+  <style>
+    body { font-family: Arial; background: #f4f6f8; padding: 40px; }
+    table { width: 100%; border-collapse: collapse; background: white; }
+    th, td { padding: 12px; border: 1px solid #ddd; text-align: center; }
+    th { background: #333; color: white; }
+    a { text-decoration: none; padding: 6px 12px; border-radius: 5px; color: white; }
+    .enable { background: green; }
+    .disable { background: red; }
+  </style>
+</head>
+<body>
+  <h2>Admin Dashboard</h2>
+  <a href="/logout">Logout</a>
+  <table>
+    <tr><th>Name</th><th>Email</th><th>Status</th><th>Action</th></tr>
+    <% users.forEach(u => { %>
+      <tr>
+        <td><%= u.name %></td>
+        <td><%= u.email %></td>
+        <td><%= u.status %></td>
+        <td>
+          <% if (u.status === 'disabled') { %>
+            <a class="enable" href="/admin/enable/<%= u._id %>">Enable</a>
+          <% } else { %>
+            <a class="disable" href="/admin/disable/<%= u._id %>">Disable</a>
+          <% } %>
+        </td>
+      </tr>
+    <% }) %>
+  </table>
+</body>
+</html>
