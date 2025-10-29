@@ -5,21 +5,6 @@ It includes features like **registration, login, session management, role-based 
 
 ---
 
-## 📁 Project Structure
-
-```
-├── pages/
-│   ├── login.ejs
-│   ├── register.ejs
-│   ├── userDashboard.ejs
-│   └── admin.ejs
-├── app.js
-├── package.json
-└── README.md
-```
-
----
-
 ## ⚙️ Features
 
 ✅ User Registration (with password hashing using **bcrypt**)  
