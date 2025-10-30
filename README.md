@@ -12,7 +12,7 @@ It includes features like **registration, login, session management, role-based 
 ✅ Role-based Access (User/Admin)  
 ✅ Admin Dashboard to **enable/disable users**  
 ✅ Session & Cookie Management  
-✅ Secure authentication with **bcrypt** & **jsonwebtoken**  
+✅ Secure authentication with **bcrypt** 
 ✅ EJS Templating for frontend pages  
 
 ---
@@ -121,7 +121,6 @@ require('dotenv').config();
 ---
 
 ## 🧹 To Do / Future Improvements
-- ✅ Email verification using nodemailer  
 - ✅ Password reset feature  
 - ✅ Add pagination in admin dashboard  
 - ✅ Use environment variables for secrets  
